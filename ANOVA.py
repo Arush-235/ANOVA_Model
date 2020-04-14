@@ -1,5 +1,3 @@
-import numpy as np
-
 #level_of_significance = 0.10
 level_of_significance = input("Level of Significance \n\t(1) 0.10\n\t(2) 0.05\n")
 if level_of_significance=='2':
