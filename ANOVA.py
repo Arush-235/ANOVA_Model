@@ -1,11 +1,8 @@
-#level_of_significance = 0.10
 level_of_significance = input("Level of Significance \n\t(1) 0.10\n\t(2) 0.05\n")
 if level_of_significance=='2':
     csv_filename = 'F Distribution α=0.05.csv'
 elif level_of_significance=='1':
     csv_filename = 'F Distribution α=0.10.csv'
-
-# α is taken 0.10 here since too much extra data would have to be carried along to accomodate all α
 
 class population:
     def __init__(self, name):
@@ -71,7 +68,7 @@ VarianceBetween = SSwithin / DFwithin
 
 F = VarianceBetween / VarianceWithin
 
-# Calculating F Critical Value for the distribution using a F Distribution Table for α = 0.10, which I downloaded from
+# Calculating F Critical Value for the distribution using a F Distribution Table for α = 0.10 and 0.05, which I downloaded from
 # http://www.socr.ucla.edu/Applets.dir/F_Table.html and converted to a CSV using Google Sheets 
 # https://docs.google.com/spreadsheets/d/1GjmWv60z4o_DhTF1tSKei-yH_4-LXsSTqxGcBV9quLg/edit?usp=sharing.
 
